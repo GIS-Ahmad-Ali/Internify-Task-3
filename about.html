@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | GeoPulse Spatial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= FLOATING NAVBAR ================= -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8"></path>
+            <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+        </span>
+        <span>GeoPulse <em>Spatial</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark or Light Mode" title="Switch Theme">
+          <span id="themeIcon">🌙</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+        <a href="contact.html" class="nav-cta">Start a Project</a>
+        <button class="hamburger" id="menuBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="pill-badge">About GeoPulse Spatial</span>
+        <h1>Bridging Satellite Science &amp; Clean Cartographic Design</h1>
+        <p>
+          Founded in Lahore, Pakistan, GeoPulse Spatial transforms raw multi-spectral imagery and vector cadastral records into clear, reliable geographic intelligence.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= MISSION & STORY ================= -->
+    <section class="section">
+      <div class="container split-grid">
+        <div class="media-glass-frame reveal">
+          <img
+            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+            alt="Highland Topographic Terrain Mapping"
+          />
+          <div class="media-caption">
+            <span class="dot-live"></span>
+            <span>Digital Elevation Models &amp; Terrain Analysis</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="section-tag warm">Our Mission</span>
+          <h2>Precision Mapping Without Visual Clutter</h2>
+          <p>
+            Many geospatial platforms overwhelm users with raw tables and unreadable overlays. Our approach focuses on <strong>clean topology</strong>, <strong>5-class discrete thematic clarity</strong>, and <strong>responsive web interfaces</strong> that anyone—from agronomists to urban engineers—can interpret immediately.
+          </p>
+          <p>
+            Led by <strong>Ahmad Ali</strong> (BS GIS &amp; Remote Sensing researcher at the University of the Punjab), our workflows combine desktop precision in QGIS and ArcGIS Pro with cloud analytics in Google Earth Engine and Python.
+          </p>
+
+          <div class="value-pills">
+            <span>✓ Zero-Gap Vector Topology</span>
+            <span>✓ Multi-Sensor Data Fusion</span>
+            <span>✓ Responsive Web GIS UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4-STEP WORKFLOW ================= -->
+    <section class="section alt-tint">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">How We Work</span>
+          <h2>Our 4-Stage Spatial Pipeline</h2>
+          <p>Every project follows a verified quality-assurance workflow from raw acquisition to web deployment.</p>
+        </div>
+
+        <div class="steps-4-grid">
+          <div class="glass-card reveal">
+            <span class="step-num">01</span>
+            <h3>Data Acquisition</h3>
+            <p>Sourcing cloud-masked Sentinel-2, Landsat 9, SRTM DEMs, drone orthomosaics, and scanned cadastral sheets.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <span class="step-num">02</span>
+            <h3>Georeferencing &amp; QC</h3>
+            <p>Assigning accurate projections (WGS 1984 / UTM), digitizing boundaries, and resolving overlaps or gaps.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <span class="step-num">03</span>
+            <h3>Spatial Modeling</h3>
+            <p>Computing spectral indices (NDVI, NDWI, LST), zonal statistics, and multi-criteria suitability layers.</p>
+          </div>
+
+          <div class="glass-card reveal">
+            <span class="step-num">04</span>
+            <h3>Cartography &amp; Web</h3>
+            <p>Publishing print-ready A2 cartographic layouts alongside interactive browser dashboards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 GeoPulse Spatial &bull; Designed by <strong>Ahmad Ali</strong> (GIS &amp; Frontend Developer)</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

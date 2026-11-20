@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoPulse Spatial | GIS &amp; Satellite Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= FLOATING NAVBAR ================= -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8"></path>
+            <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+        </span>
+        <span>GeoPulse <em>Spatial</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark or Light Mode" title="Switch Theme">
+          <span id="themeIcon">🌙</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+        <a href="contact.html" class="nav-cta">Start a Project</a>
+        <button class="hamburger" id="menuBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="pill-badge">🛰️ Earth Observation &amp; Web GIS Platform</span>
+          <h1>Actionable Spatial Intelligence From Orbit to Ground</h1>
+          <p class="hero-lead">
+            We deliver high-precision cadastral mapping, multi-sensor satellite remote sensing, and interactive geospatial dashboards for agriculture, urban planning, and environmental resilience.
+          </p>
+          <div class="hero-btns">
+            <a href="contact.html" class="btn btn-primary">Request Spatial Consultation &rarr;</a>
+            <a href="about.html" class="btn btn-secondary">Explore Our Workflow</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong>10m–30m</strong>
+              <span>Sentinel &amp; Landsat Analytics</span>
+            </div>
+            <div class="metric-card">
+              <strong>99.4%</strong>
+              <span>Cadastral Topology Accuracy</span>
+            </div>
+            <div class="metric-card">
+              <strong>24/7</strong>
+              <span>Cloud GEE Monitoring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="media-glass-frame">
+            <img
+              src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1000&q=85"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=85';"
+              alt="Earth Observation Satellite Orbiting Planet"
+            />
+            <div class="media-caption">
+              <span class="dot-live"></span>
+              <span>Multi-Spectral Earth Observation &amp; Cartography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CORE SERVICES SECTION ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Core Capabilities</span>
+          <h2>End-to-End Geospatial Solutions</h2>
+          <p>Combining desktop GIS precision with cloud-scale satellite processing and modern web interfaces.</p>
+        </div>
+
+        <div class="cards-3-grid">
+          <article class="glass-card reveal">
+            <div class="card-icon indigo">🗺️</div>
+            <h3>Cadastral &amp; Parcel Digitization</h3>
+            <p>
+              High-accuracy vector digitization, Mussavi georeferencing, parcel subdivision, and topological QA/QC for land administration systems.
+            </p>
+            <ul class="mini-list">
+              <li>ArcGIS Pro &amp; QGIS Topology Rules</li>
+              <li>Clean Geodatabase Schema Design</li>
+            </ul>
+          </article>
+
+          <article class="glass-card reveal">
+            <div class="card-icon copper">🛰️</div>
+            <h3>Satellite Remote Sensing</h3>
+            <p>
+              Time-series NDVI crop health tracking, Land Surface Temperature (LST) urban heat analysis, and soil moisture modeling via Google Earth Engine.
+            </p>
+            <ul class="mini-list">
+              <li>Landsat 8/9, Sentinel-2 &amp; MODIS</li>
+              <li>5-Class Thematic Raster Mapping</li>
+            </ul>
+          </article>
+
+          <article class="glass-card reveal">
+            <div class="card-icon indigo">💻</div>
+            <h3>Interactive Web GIS Portals</h3>
+            <p>
+              Custom browser-based mapping dashboards integrating Leaflet, GeoJSON layers, zonal charts, and responsive decision-support tools.
+            </p>
+            <ul class="mini-list">
+              <li>Responsive HTML5, CSS3 &amp; JavaScript</li>
+              <li>Automated Spatial Data Pipelines</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED CASE STUDIES ================= -->
+    <section class="section alt-tint">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag warm">Recent Deployments</span>
+          <h2>Featured Spatial Case Studies</h2>
+          <p>Real-world mapping and climate intelligence workflows built for regional decision-makers.</p>
+        </div>
+
+        <div class="cards-2-grid">
+          <article class="showcase-card reveal">
+            <div class="showcase-img">
+              <img
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85"
+                alt="Agricultural Crop Monitoring Fields"
+              />
+              <span class="img-pill">Agri-Climate Analytics</span>
+            </div>
+            <div class="showcase-body">
+              <h3>FieldShift District Crop &amp; Drought Monitor</h3>
+              <p>
+                Integrated multi-year Landsat 9 NDVI, SMAP soil moisture, and GPM precipitation data to identify tehsil-level agricultural stress zones and generate bilingual crop advisories.
+              </p>
+              <a href="about.html" class="text-link">Read Technical Methodology &rarr;</a>
+            </div>
+          </article>
+
+          <article class="showcase-card reveal">
+            <div class="showcase-img">
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=85"
+                alt="Topographic and Geological Cartography"
+              />
+              <span class="img-pill warm">Cartographic Production</span>
+            </div>
+            <div class="showcase-body">
+              <h3>Multi-Layer Mineral &amp; Geological Atlas</h3>
+              <p>
+                Compiled and digitized geological fault lines, mineral deposit zones, hydrological networks, and district boundaries into publication-grade WGS 1984 cartographic layouts.
+              </p>
+              <a href="contact.html" class="text-link">Inquire About Custom Mapping &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 GeoPulse Spatial &bull; Designed by <strong>Ahmad Ali</strong> (GIS &amp; Frontend Developer)</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

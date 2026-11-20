@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | GeoPulse Spatial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= FLOATING NAVBAR ================= -->
+  <header class="navbar-wrap">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.6 9h16.8M3.6 15h16.8"></path>
+            <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path>
+          </svg>
+        </span>
+        <span>GeoPulse <em>Spatial</em></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Dark or Light Mode" title="Switch Theme">
+          <span id="themeIcon">🌙</span>
+          <span id="themeLabel">Dark</span>
+        </button>
+        <a href="contact.html" class="nav-cta">Start a Project</a>
+        <button class="hamburger" id="menuBtn" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <span class="pill-badge">Get In Touch</span>
+        <h1>Start Your GIS or Remote Sensing Project</h1>
+        <p>
+          Send us your area of interest, dataset requirements, or web dashboard inquiry and we will respond within 24 hours.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- Left Column: Direct Details -->
+        <div class="glass-card contact-details-card reveal">
+          <span class="section-tag">Direct Channels</span>
+          <h2>Lahore Geospatial Desk</h2>
+          <p>
+            Available for satellite imagery analysis, cadastral parcel digitization, cartographic map design, and responsive frontend web development.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="c-badge">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>Lahore, Punjab, Pakistan</span>
+              </div>
+            </li>
+            <li>
+              <span class="c-badge">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <span>gorcha1214@gmail.com</span>
+              </div>
+            </li>
+            <li>
+              <span class="c-badge">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <span>0312-7461614 / 0331-7131562</span>
+              </div>
+            </li>
+            <li>
+              <span class="c-badge">💻</span>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/GIS-Ahmad-Ali" target="_blank" rel="noopener">github.com/GIS-Ahmad-Ali</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Column: Validated Contact Form -->
+        <div class="glass-card form-card reveal">
+          <h2>Project Inquiry Form</h2>
+          <p class="form-sub">All fields marked with * are required.</p>
+
+          <!-- Success Feedback Alert -->
+          <div class="form-alert success" id="formSuccess" role="status" aria-live="polite">
+            <strong>✅ Inquiry Submitted Successfully!</strong>
+            <span id="successText">Thank you! We have received your spatial project details and will reach out shortly.</span>
+          </div>
+
+          <!-- Global Error Summary Alert -->
+          <div class="form-alert error" id="formGlobalError" role="alert">
+            <strong>⚠️ Please fix the highlighted errors below before submitting.</strong>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" name="fullName" placeholder="e.g. Ahmad Ali" required />
+              <small class="error-msg" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="emailAddress">Email Address *</label>
+              <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g. name@example.com" required />
+              <small class="error-msg" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Required Service *</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">-- Select a Geospatial Service --</option>
+                <option value="Satellite Remote Sensing & GEE">Satellite Remote Sensing &amp; GEE</option>
+                <option value="Cadastral Mapping & Digitization">Cadastral Mapping &amp; Digitization</option>
+                <option value="Interactive Web GIS Dashboard">Interactive Web GIS Dashboard</option>
+                <option value="Cartographic Print Layout">Cartographic Print Layout</option>
+              </select>
+              <small class="error-msg" id="serviceError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="projectMessage">Project Details *</label>
+              <textarea id="projectMessage" name="projectMessage" rows="5" placeholder="Describe your study area, required datasets, or website goals (minimum 15 characters)..." required></textarea>
+              <small class="error-msg" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width">Submit Inquiry &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 GeoPulse Spatial &bull; Designed by <strong>Ahmad Ali</strong> (GIS &amp; Frontend Developer)</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
